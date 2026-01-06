@@ -5,6 +5,7 @@
 서버는 Raspberry Pi에서 데몬 프로세스로 실행되며,
 클라이언트는 Linux Ubuntu 환경에서 서버에 접속하여 문자열 명령을 통해 장치를 제어합니다.
 
+---
 
 ## Project Overview
 
@@ -20,6 +21,7 @@
 
 - Build: Cross-compilation + Makefile automation
 
+---
 
 ## Supported Devices & Behavior
 
@@ -61,6 +63,7 @@
 
 - 0이 되면 부저 울림
 
+---
 
 ## System Architecture
 
@@ -74,6 +77,7 @@
 
 - 서버는 데몬 프로세스로 실행되어 터미널 종료와 무관하게 동작
 
+---
 
 ## Build & Run
 
@@ -117,6 +121,7 @@ Makefile 내 IP 변수의 값을
 
 클라이언트는 TCP를 통해 서버에 연결하고, 장치 제어 명령을 보낼 수 있는 인터페이스를 제공합니다.
 
+---
 
 ## Project Structure
 
@@ -132,6 +137,7 @@ project/
 └── exec.sh              # 빌드 자동화 스크립트
 ```
 
+---
 
 ## GPIO Pin Configuration (BCM)
 
@@ -149,6 +155,7 @@ project/
 
     D: GPIO 23
 
+---
 
 ## Requirements
 
