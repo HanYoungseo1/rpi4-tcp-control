@@ -131,7 +131,7 @@ project/
 ├── Makefile
 └── exec.sh              # 빌드 자동화 스크립트
 ```
----
+
 
 ## 📌 GPIO Pin Configuration (BCM)
 
