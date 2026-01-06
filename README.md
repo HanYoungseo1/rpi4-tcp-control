@@ -6,7 +6,7 @@
 클라이언트는 Linux Ubuntu 환경에서 서버에 접속하여 문자열 명령을 통해 장치를 제어합니다.
 
 
-## 📌 Project Overview
+## Project Overview
 
 - Server: Raspberry Pi 4 (ARM64)
 
@@ -21,9 +21,9 @@
 - Build: Cross-compilation + Makefile automation
 
 
-## 🖥️ Supported Devices & Behavior
+## Supported Devices & Behavior
 
-### 🔹 LED
+### LED
 
 - 클라이언트 명령을 통해 ON / OFF 제어
 
@@ -32,28 +32,28 @@
 - Sensor와 연동 시 자동 제어
 
 
-### 🔹 Buzzer
+### Buzzer
 
 - 클라이언트 명령으로 소리 ON / OFF 제어
 
 - 7-Segment 카운트다운 종료 시 알림용으로 동작
 
 
-### 🔹 Light Sensor
+### Light Sensor
 
 - 클라이언트에서 조도 센서 값 확인
 
 - 빛이 감지되지 않으면 LED On, 빛이 감지되면 LED Off
 
 
-### 🔹 Temperature Sensor
+### Temperature Sensor
 
 - 클라이언트에서 온도 센서 값 확인
 
 - 온도가 설정한 값보다 높으면 LED On, 낮으면 LED Off
 
 
-### 🔹 7-Segment Display
+### 7-Segment Display
 
 - 클라이언트에서 전송한 숫자(0~9) 표시 (초 단위 시간)
 
@@ -62,7 +62,7 @@
 - 0이 되면 부저 울림
 
 
-## ⚙️ System Architecture
+## System Architecture
 
 - 서버는 TCP 연결을 유지하며 클라이언트 명령을 수신
 
@@ -75,7 +75,7 @@
 - 서버는 데몬 프로세스로 실행되어 터미널 종료와 무관하게 동작
 
 
-## 🚀 Build & Run
+## Build & Run
 
 ### 1. Makefile 내 IP 수정
 
@@ -118,7 +118,7 @@ Makefile 내 IP 변수의 값을
 클라이언트는 TCP를 통해 서버에 연결하고, 장치 제어 명령을 보낼 수 있는 인터페이스를 제공합니다.
 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -133,7 +133,7 @@ project/
 ```
 
 
-## 📌 GPIO Pin Configuration (BCM)
+## GPIO Pin Configuration (BCM)
 
 - LED → GPIO 17
 
@@ -150,7 +150,7 @@ project/
     D: GPIO 23
 
 
-## 🛠 Requirements
+## Requirements
 
 - `wiringPi` 라이브러리 (크로스 컴파일 환경에서도 설치 필요)
 
