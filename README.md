@@ -45,14 +45,20 @@
 
 - 클라이언트에서 조도 센서 값 확인
 
-- 빛이 감지되지 않으면 LED On, 빛이 감지되면 LED Off
+- ADC 값과 사용자가 입력한 기준 값을 비교하여 LED 제어
+    ADC 범위 : 0~255
+        값이 작을수록 밝음 (LED off)
+        값이 클수록 어두움 (LED on)
 
 
 ### Temperature Sensor
 
 - 클라이언트에서 온도 센서 값 확인
 
-- 온도가 설정한 값보다 높으면 LED On, 낮으면 LED Off
+- ADC 값과 사용자가 입력한 기준 값을 비교하여 LED 제어
+    ADC 범위 : 0~255
+        값이 적을수록 고온 (LED on)
+        값이 클수록 저온 (LED off)
 
 
 ### 7-Segment Display
